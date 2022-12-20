@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo apt update
-sudo apt install neovim
+sudo apt update -y
+sudo apt install -y neovim
 mv init.lua ~/.config/nvim/init.lua
