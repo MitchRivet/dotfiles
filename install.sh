@@ -1,5 +1,7 @@
 #!/bin/bash
-sudo apt update -y
-sudo apt install -y neovim
-mkdir ~/.config/nvim
-mv init.lua ~/.config/nvim/
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+brew upgrade
+brew install neovim
+mv init.lua $HOME/.config/nvim/
